@@ -1,0 +1,55 @@
+<!-- Modal -->
+<div class="modal fade" id="edit_transcation" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_vehicle_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_vehicle_modal_label">
+                    Edit Transcation
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>x</strong>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" />
+                    </svg>
+                    <div>
+                        Use this page to edit the current vehicle transcation. Click Save
+                        Changes to complete your changes.
+                    </div>
+                </div>
+
+                <hr class="my-1" />
+
+                <form id="edit_transcation_" autocomplete="off">
+                    <input type="text" name="debit_or_credit_flag" id="debit_or_credit_flag" hidden />
+                    
+                    <input type="text" name="id_of_revenue_xpense" id="id_of_revenue_xpense" hidden />
+
+                    <div class="form-group mb-2">
+                        <label for="charts_of_account" class="text-primary">Edit Transcation Account</label>
+                        <select name="charts_of_account" id="charts_of_account" class="form-select"
+                            data-placeholder="Daily Revenue, Fuel Expense, Sales Fees"></select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="new_amount" class="text-primary">Enter New Amount</label>
+                        <input type="text" name="new_amount" id="new_amount" class="form-control"
+                            placeholder="200, 400, 1000" />
+                    </div>
+
+                    <hr class="my-2" />
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="modal fade" id="add_vehicle_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_vehicle_brand_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_vehicle_brand_modal_label">Add New Vehicle Brand</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>X</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add a new vehicle brand to the system. </strong></p>
+                    <hr />
+                    <p class="mb-0">When you are finished click on Add vehicle brand.</p>
+                </div>
+
+                <form id="add_vehicle_brand_form" autocomplete="off">
+
+                    <div class="form-group mb-2">
+                        <label for="vehicle_brand_name" class="text-primary">Enter Vehicle Brand. </label>
+                        <input type="text" name="vehicle_brand_name" id="vehicle_brand_name" class="form-control"
+                            placeholder="Toyota, Isuzu, Mercedez, Piagio, Bajaj">
+                        <small id="emailHelp" class="form-text text-muted">Enter the unique name of the
+                            vehicle brand.</small>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Add Vehicle Brand
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

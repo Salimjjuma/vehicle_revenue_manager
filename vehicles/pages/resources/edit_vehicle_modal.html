@@ -1,0 +1,66 @@
+<!-- Modal -->
+<div class="modal fade" id="edit_vehicle_modal" data-bs-backdrop="static" 
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" 
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Vehicle</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+        </div>
+        <div class="modal-body">
+
+            <div class="alert alert-warning" role="alert">
+                <p><strong>Use this form to edit vehicle </strong></p>
+                <hr />
+                <p class="mb-0">Click on Edit Vehicle to save your changes.</p>
+            </div>
+
+            <form id="edit_vehicle_form" autocomplete="off">
+
+                <input type="text" name="vehicle_id" id="vehicle_id_input_hidden" hidden>
+
+                <div class="form-group mb-2">
+                    <label for="edit_vehicle_name" class="text-primary">Vehicle Name</label>
+                    <input type="text" name="vehicle_name" id="edit_vehicle_name" 
+                        class="form-control">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label for="edit_registration_number" class="text-primary">Registration Number</label>
+                    <input type="text" name="registration_number" id="edit_registration_number" 
+                        class="form-control">
+                </div>
+
+
+                <div class="form-group mb-2">
+                    <label for="edit_category" class="text-primary">Select Type of Vehicle Category</label>
+                    <select name="category" id="edit_category" class="form-select"
+                    data-placeholder="Choose a Vehicle Category">
+                    </select>
+                </div>
+
+                <div class="form-group mb-2">
+                    <label for="edit_company_name" class="text-primary">Select Type of Vehicle Company</label>
+                    <select name="company_name" id="edit_company_name" class="form-select"
+                    data-placeholder="Choose a Vehicle Company">
+                    </select>
+                </div>
+               
+
+                <hr class="my-2">
+
+                <div class="btn-group">
+                    <button class="btn btn-md btn-primary" type="submit">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+         
+      
+        </div>
+      </div>
+    </div>
+
+  </div>

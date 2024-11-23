@@ -1,0 +1,6 @@
+{
+    "name": "root/vanga",
+    "require": {
+        "tecnickcom/tcpdf": "^6.6"
+    }
+}

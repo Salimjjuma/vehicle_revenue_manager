@@ -1,0 +1,83 @@
+<!-- Modal -->
+<div class="modal fade" id="add_vehicle_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_account_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_account_modal_label">Add New User Account</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>x</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add a new user account</strong></p>
+                    <hr />
+                    <p class="mb-0">When you are finished click on Add User.</p>
+                </div>
+
+                <hr class="my-3">
+
+                <form id="add_user_form" autocomplete="off">
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="first_name" class="text-primary">First Name:</label>
+                            <input type="text" name="first_name" id="first_name" class="form-control"
+                                placeholder="Enter First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="second_name" class="text-primary">Second Name:</label>
+                            <input type="text" name="second_name" id="second_name" class="form-control"
+                                placeholder="Enter Second name" aria-label="Last name">
+                        </div>
+
+                        <div class="col">
+                            <label for="last_name" class="text-primary">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name" class="form-control"
+                                placeholder="Enter Last name" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="email_address" class="text-primary">Email Address:</label>
+                            <input type="text" name="email_address" id="email_address" class="form-control"
+                                placeholder="Enter Email Address" aria-label="Email Address">
+                        </div>
+
+                        <div class="col">
+                            <label for="username" class="text-primary">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control"
+                                placeholder="Enter Username" aria-label="Username">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="password" class="text-primary">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Enter Password" aria-label="password">
+                        </div>
+
+                        <div class="col">
+                            <label for="re_password" class="text-primary">Re-enter Password:</label>
+                            <input type="password" id="re_password" name="re_password" class="form-control"
+                                placeholder="Re-enter Password" aria-label="password">
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Add User Account
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

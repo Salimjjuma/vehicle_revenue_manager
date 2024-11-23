@@ -1,0 +1,42 @@
+<div class="modal fade" id="date_filter_to_print" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Custom Date Filter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" /></svg>
+                    <div>
+                        Use this form to choose start date and end dates for the Vehicle Reports.
+                    </div>
+                </div>
+
+                <form id="date_filter_to_print_report_form" autocomplete="off">
+
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-md-6">
+                            <!-- Date Filters -->
+                            <label for="startDate" class="text-primary">Start Date:</label>
+                            <input class="form-control" type="date" name="startDate" id="startDate">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <label for="endDate" class="text-primary">End Date:</label>
+                            <input class="form-control" type="date" name="endDate" id="endDate">
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <!-- Button trigger modal -->
+                    <button type="submit" class="btn btn-primary">
+                        Generate Report
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

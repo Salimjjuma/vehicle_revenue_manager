@@ -1,0 +1,63 @@
+<!-- Modal -->
+<div class="modal fade" id="add_vehicle_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_vehicle_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_vehicle_modal_label">Add New Vehicle</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>X</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add a new Vehicle to the system. </strong></p>
+                    <hr />
+                    <p class="mb-0">Click on Add Vehicle to add a new vehicle.</p>
+                </div>
+
+                <form id="add_vehicle_form" autocomplete="off">
+
+                    <div class="form-group mb-2">
+                        <label for="vehicle_company" class="text-primary">Choose Vehicle Company. </label>
+                        <select name="vehicle_company" id="vehicle_company" class="form-select"
+                            data-placeholder="Fuso, Toyota, Nissan">
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="vehicle_name" class="text-primary">Vehicle Name. </label>
+                        <input type="text" name="vehicle_name" id="vehicle_name" class="form-control"
+                            placeholder="Piagio MD90X, Toyota 9L, Isuzu D-MAX">
+                        <small id="emailHelp" class="form-text text-muted">Enter the unique name of the vehicle.</small>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="category" class="text-primary">Choose Vehicle Category.</label>
+                        <select class="form-select" name="category" id="category"
+                            data-placeholder="TukTuk, Lorries, Matatu">
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="reg_no" class="text-primary">Registration No. </label>
+                        <input type="text" name="reg_no" id="reg_no" class="form-control"
+                            placeholder="KBZ 552H, KAE 390L, KDD 001E">
+                        <small id="emailHelp" class="form-text text-muted">Enter the plate number of the
+                            vehicle.</small>
+                    </div>
+
+                    <hr class="my-2">
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Add Vehicle
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

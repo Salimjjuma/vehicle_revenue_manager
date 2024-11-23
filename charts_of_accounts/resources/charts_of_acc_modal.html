@@ -1,0 +1,53 @@
+<!-- Modal -->
+<div class="modal fade" id="add_vehicle_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_account_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_account_modal_label">Add New Chart of Account</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>X</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add a new chart of account to the system. </strong></p>
+                    <hr />
+                    <p class="mb-0">When you are finished click on Add account.</p>
+                </div>
+
+                <form id="add_account_form" autocomplete="off">
+
+                    <div class="form-group mb-2">
+                        <label for="acc_name" class="text-primary">Name of the Account. </label>
+                        <input type="text" name="acc_name" id="acc_name" class="form-control"
+                            placeholder="Daily Revenue, Fuel Expense, County Insurance">
+                        <small id="emailHelp" class="form-text text-muted">Enter the unique name of the
+                            account.</small>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="acc_type" class="text-primary">Choose Account Type. </label>
+                        <select name="acc_type" id="acc_type" class="form-select" data-placeholder="Revenue, Expense">
+                        </select>
+                    </div>
+
+                    <label for="acc_description" class="form-label text-primary">Enter Account Description</label>
+                    <div class="form-floating mb-2">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="acc_description"
+                            name="acc_description" rows="3"></textarea>
+                        <label for="floatingTextarea">Add Account Description</label>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Add account
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

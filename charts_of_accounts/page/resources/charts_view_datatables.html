@@ -1,0 +1,38 @@
+<span id="cards_section"></span>
+
+<hr class="my-3">
+
+<!--graph showing the transcations on a day to day basis.
+color to use on the graph depends on the type of account. -->
+
+
+<canvas id="revenue_expense_chartjs" width="60" height="35"></canvas>
+
+<hr class="my-3">
+
+<div class="alert alert-info d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+        <use xlink:href="#info-fill" />
+    </svg>
+    <div>
+        Table showing all the transcation and the respective vehicle that affected the transcation.
+    </div>
+</div>
+
+
+<div class="card-body">
+    <div class="table-responsive">
+
+        <table class="table table-striped" id="charts_view_datatables" width="100%">
+            <thead>
+                <tr>
+                    <th scope="col">Date of Transcation</th>
+                    <th scope="col">Vehicle</th>
+                    <th scope="col">Reg. Number</th>
+                    <th scope="col">Vehicle Category</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

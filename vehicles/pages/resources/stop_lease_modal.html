@@ -1,0 +1,48 @@
+<!-- modal used to stop vehicle lease.  -->
+<div class="modal fade" id="stopLeaseModal" tabindex="-1" aria-labelledby="stopLeaseModalLabal" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="stopLeaseModalLabal">Terminate Vehicle Lease</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- alert used to caution the user for password and email address. -->
+                <div class="alert alert-info d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" />
+                    </svg>
+                    <div>
+                        You are about to stop the lease of this vehicle, this process is irreversible. Please proceed
+                        with caution.
+                    </div>
+                </div>
+
+                <!-- form used to stop the vehicle lease -->
+                <form id="stopLeaseForm">
+
+                    <input type="text" name="vehicle_driver_conductors_id_from_table"
+                        id="vehicle_driver_conductors_id_from_table" hidden>
+
+                    <div class="form-group mb-3">
+                        <label for="email" class="text-primary">Enter Email Address</label>
+                        <input type="email" name="email" id="email" class="form-control"
+                            placeholder="Enter Email address">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="password" class="text-primary">Enter Password</label>
+                        <input type="password" name="password" id="password" class="form-control"
+                            placeholder="Enter password">
+                    </div>
+
+                    <!-- used to hold the errors in the form during submit. -->
+                    <span id="errorDuringStopLeasePlaceholder"></span>
+
+                    <button type="submit" class="btn btn-sm btn-danger">I understand, Stop Lease</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

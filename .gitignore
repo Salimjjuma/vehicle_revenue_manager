@@ -1,0 +1,12 @@
+node_modules
+vendor
+assets
+composer.lock
+test1.html
+dist
+yarn.lock
+yarn-error.log
+test.php
+test
+fxn
+readme

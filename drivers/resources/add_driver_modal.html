@@ -1,0 +1,68 @@
+<!-- Modal -->
+<div class="modal fade" id="add_vehicle_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_account_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_account_modal_label">Add New Vehicle Driver </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>X</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add a new vehicle driver to the system.</strong></p>
+                    <hr />
+                    <p class="mb-0">When you are finished click on Add Vehicle.</p>
+                </div>
+
+                <form id="add_vehicle_driver_form" autocomplete="off">
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="first_name" class="text-primary">First Name:</label>
+                            <input type="text" name="first_name" id="first_name" class="form-control"
+                                placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="second_name" class="text-primary">Second Name:</label>
+                            <input type="text" name="second_name" id="second_name" class="form-control"
+                                placeholder="Second name" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="last_name" class="text-primary">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name" class="form-control"
+                                placeholder="Last name" aria-label="Last name">
+                        </div>
+                        <div class="col">
+                            <label for="phone_number" class="text-primary">Phone Number:</label>
+                            <input type="text" id="phone_number" name="phone_number" class="form-control"
+                                placeholder="Phone Number" aria-label="Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="drivers_license_no" class="text-primary">Drivers License No.:</label>
+                            <input type="text" name="drivers_license_no" id="drivers_license_no" class="form-control"
+                                placeholder="Drivers License No." aria-label="Driver License No">
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Add Vehicle Driver
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

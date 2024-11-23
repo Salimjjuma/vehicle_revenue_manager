@@ -1,0 +1,43 @@
+<!-- Modal -->
+<div class="modal fade" id="add_vehicle_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="add_account_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_account_modal_label">Add Vehicle Ownership </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>X</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add a vehicle to a owner as ownership, this could be a drive or a
+                            custodian.</strong></p>
+                    <hr />
+                    <p class="mb-0">ClicK on Add Ownership to add a vehicle to the owner and when you are finished click
+                        on Add Ownership.</p>
+                </div>
+
+                <form id="add_ownership_form" autocomplete="off">
+
+                    <input type="hidden" name="owners_id_input" id="owners_id_input">
+
+                    <div class="form-group mb-2">
+                        <label for="vehicle" class="text-primary">Choose Vehicle.</label>
+                        <select name="vehicle" id="vehicle" class="form-select"
+                            data-placeholder="Fuso, Toyota, Nissan">
+                        </select>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Add Ownership
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

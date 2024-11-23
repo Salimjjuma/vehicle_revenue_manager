@@ -1,0 +1,42 @@
+<!-- Modal -->
+<div class="modal fade" id="edit_category_modal" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="edit_category_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="edit_category_modal_label">Edit Category</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <strong>X</strong></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Use this form to add edit a category </strong></p>
+                    <hr />
+                    <p class="mb-0">When you are finished click on Save Changes.</p>
+                </div>
+
+                <form id="edit_category_form" autocomplete="off">
+
+                    <input type="hidden" name="edit_category_id" id="edit_category_id">
+
+                    <div class="form-group mb-2">
+                        <label for="edit_category_name">Category Name. </label>
+                        <input type="text" name="edit_category_name" id="edit_category_name" class="form-control"
+                            placeholder=" 4 Wheeler, TukTuk, Lorries and Heavy Trucks, 3 Wheeler">
+                        <small id="emailHelp" class="form-text text-muted">Enter a unique name for the
+                            category.</small>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-md btn-primary" type="submit">
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
